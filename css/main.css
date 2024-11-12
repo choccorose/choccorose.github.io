@@ -2287,9 +2287,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
 }
 
-@media (max-width: 450.98px) {
+@media (max-width: 950.98px) {
   .banner-area .fullscreen {
     height: 200px !important;
+    margin-top: -55px
   }
 }
 
