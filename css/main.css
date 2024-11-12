@@ -2283,25 +2283,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-  background: url(../img/header-bg.jpg) center;
+  background: url(../img/header-bg.svg) center;
   background-size: cover;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 450.98px) {
   .banner-area .fullscreen {
-    height: 920px !important;
+    height: 200px !important;
   }
-}
-
-@media (max-width: 768px) {
-  .banner-area {
-    background: url(../img/header-bg.jpg);
-    background-position: 50% 90% 50% 50%;
-  }
-}
-
-.banner-content {
-  margin-top: -250px;
 }
 
 .banner-content h1 {
