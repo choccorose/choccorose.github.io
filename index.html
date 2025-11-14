@@ -98,6 +98,84 @@
 			</section>
 			<!-- End video-sec Area -->
 			<!-- Start menu Area -->
+			<!-- Produtos Carousel (inserido) -->
+			<section class="products-carousel-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-30 col-lg-10">
+							<div class="title text-center">
+								<h2 class="mb-10">Nossos Produtos</h2>
+								<p>Veja alguns dos nossos produtos. Passe o carrossel e escolha o seu favorito.</p>
+							</div>
+							<div class="owl-carousel products-carousel">
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.54.03.jpeg" alt="Produto 1"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.54.01.jpeg" alt="Produto 2"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.54.00.jpeg" alt="Produto 3"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.54.00 (1).jpeg" alt="Produto 4"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.59.jpeg" alt="Produto 5"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.59 (2).jpeg" alt="Produto 6"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.59 (1).jpeg" alt="Produto 7"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.58.jpeg" alt="Produto 8"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.58 (1).jpeg" alt="Produto 9"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.57.jpeg" alt="Produto 10"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.56.jpeg" alt="Produto 11"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.56 (2).jpeg" alt="Produto 12"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.56 (1).jpeg" alt="Produto 13"/></div>
+								<div class="item"><img src="produtos/WhatsApp Image 2025-11-13 at 18.53.55.jpeg" alt="Produto 14"/></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<style>
+				/* Produtos carousel styles */
+				.products-carousel .item {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 8px;
+				}
+				.products-carousel .item img {
+					width: 100%;
+					height: 260px; /* altura base */
+					object-fit: cover; /* mantém proporção e preenche */
+					border-radius: 10px;
+					box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+				}
+				@media (max-width: 768px) {
+					.products-carousel .item img { height: 200px; }
+				}
+				@media (max-width: 480px) {
+					.products-carousel .item img { height: 160px; }
+				}
+			</style>
+			<script>
+				// Inicializa o carrossel quando o plugin OwlCarousel estiver disponível
+				(function waitAndInit(){
+					if (window.jQuery && jQuery().owlCarousel) {
+						jQuery(document).ready(function($){
+							$('.products-carousel').owlCarousel({
+								loop: true,
+								margin: 12,
+								autoplay: true,
+								autoplayTimeout: 4000,
+								autoplayHoverPause: true,
+								dots: true,
+								nav: true,
+								navText: ['‹','›'],
+								responsive: {
+									0: { items: 1 },
+									600: { items: 2 },
+									1000: { items: 3 }
+								}
+							});
+						});
+					} else {
+						setTimeout(waitAndInit, 150);
+					}
+				})();
+			</script>
+
 			<section class="menu-area section-gap" id="coffe">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
